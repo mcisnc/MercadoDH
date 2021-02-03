@@ -1,0 +1,257 @@
+/* COLORS */
+:root {
+    --color-yellow: #EAC926;
+    --color-blue:  #03264C;
+    --color-light-blue: #1259c3;
+    --color-grey: #666;
+    --color-light-grey: #ebebeb;
+    --color-green:  #39b54a;
+    --color-white: #fff;
+}
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body {
+    background-color: var(--color-light-grey);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--color-yellow);
+}
+
+/*TEXT*/
+.price {
+    font-size: 18px;
+    width: 50%;
+}
+
+.discount {
+    color: var(--color-green);
+    font-size: 16px;
+    width: 50%;
+}
+
+.description {
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+/* HEADER */
+.container-logo {
+    width: 50%;
+}
+
+/* NAVBAR */
+.navbar {
+    display: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+/* BUTTONS */
+.btn-search {
+    display: block;
+    width: 19px;
+}
+.btn-menu {
+    background-color: var(--color-light-blue);
+    border-radius: 8px;
+    color: var(--color-white);
+    font-size: 20px;
+    padding: 8px 5px;
+    margin: auto;
+    max-width: 36px;
+    text-align: center;
+}
+
+/* FORMS */
+.form-search {
+    display: inline-flex;
+    width: 50%;
+}
+.form-search input {
+    text-align: center;
+}
+
+/* CONTAINER */
+.container-slogan {
+    margin: auto;
+    text-align: center;
+    display: inline-flex;
+}
+.container-slogan i{
+    width: auto;
+}
+
+.container-recommended {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.container-item {
+    background-color: var(--color-white);
+    margin-bottom: 10px;
+}
+
+.container-details {
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-light-grey);
+    padding: 15px;
+    position: relative;
+}
+
+.container-details i{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-green);
+    border-radius: 50%;
+    color: var(--color-green);
+    font-size: 16px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    width: 30px;
+}
+
+.container-price {
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-end;
+}
+
+/* HOVER */
+.container-item:hover .description{
+    display: block;
+}
+
+.container-benefit {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.container-benefit i {
+    font-size: 2em;
+    margin-top: 20px;
+    color: var(--color-light-blue);
+}
+
+.copyright {
+    color: var(--color-grey);
+    text-align: center;
+    margin-top: 25px;
+}
+
+@media (min-width: 361px){
+    .navbar {
+        display: block;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+    
+    .container-item {
+        box-shadow: 5px var(--color-grey);
+    }
+}
+
+@media (min-width: 768px){
+    .container-top-header {
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .container-slogan {
+        max-width: 320px;
+        text-align: right;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 0 5px;
+    }
+
+    .container-item {
+        margin: 20px;
+        flex: 40%;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-logo {
+        width: 250 px;
+    }
+    .container-top-header {
+        align-items: center;
+    }
+    .navbar {
+        max-width: 1200px;
+        margin-top: 40px;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-slogan {
+        margin: 0;
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .navbar li {
+        font-size: 19px;
+    }
+    .container-item {
+        flex: 0 20%;
+    }
+    .benefits {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        width: 90%;
+    }
+    .container-benefit {
+        flex: 0 27%;
+    }
+    .container-benefit strong{
+        font-size: 18px;
+    }
+    .container-benefit p{
+        font-size: 15px;
+        text-align: justify;
+        padding: 5px 30px;
+    }
+    .container-benefit i{
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+}
