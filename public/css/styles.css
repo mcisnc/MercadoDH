@@ -45,11 +45,22 @@ header {
 /* HEADER */
 .container-logo {
     width: 50%;
+    max-width: 400px;
 }
 
 /* NAVBAR */
 .navbar {
     display: none;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.navbar-menu {
+    width: 30%;
+}
+
+.navbar-user {
+    width: 30%;
 }
 
 .navbar ul {
@@ -58,16 +69,21 @@ header {
 }
 
 .navbar a {
+    text-align: center;
     display: inline-block;
     font-size: 17px;
     text-decoration: none;
     padding: 5px 0;
 }
 
+.navbar i {
+    width: 20px;
+    height: 20px;
+}
 /* BUTTONS */
 .btn-search {
     display: block;
-    width: 19px;
+    width: 30px;
 }
 .btn-menu {
     background-color: var(--color-light-blue);
@@ -83,20 +99,32 @@ header {
 /* FORMS */
 .form-search {
     display: inline-flex;
+    height: 30px;
     width: 50%;
+    max-width: 400px;
 }
 .form-search input {
     text-align: center;
 }
 
 /* CONTAINER */
+.container-top-header {
+    display: flex;
+    margin: 0px 25px 25px 25px;
+    padding-top: 25px;
+}
 .container-slogan {
     margin: auto;
-    text-align: center;
+    width: 50%;
     display: inline-flex;
 }
-.container-slogan i{
-    width: auto;
+.container-slogan i {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+.container-slogan p {
+    text-align: left;
 }
 
 .container-recommended {
@@ -160,23 +188,19 @@ header {
     color: var(--color-grey);
     text-align: center;
     margin-top: 25px;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 361px){
-    .navbar {
-        display: block;
-    }
-
-    .btn-menu {
-        display: none;
-    }
-    
     .container-item {
         box-shadow: 5px var(--color-grey);
     }
 }
 
 @media (min-width: 768px){
+    .btn-menu {
+        display: none;
+    }
     .container-top-header {
         justify-content: space-between;
         width: auto;
@@ -214,7 +238,6 @@ header {
         align-items: center;
     }
     .navbar {
-        max-width: 1200px;
         margin-top: 40px;
         margin-bottom: auto;
         margin-left: auto;
