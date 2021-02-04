@@ -9,81 +9,140 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <!--LOGO-->
+        <div class="container-top-header">
+            <div class="container-logo">
+                <a href="/">
+                    <img src="static/img/logo-mercado-liebre.svg" alt="logo">
+                </a>
+            </div>
+            <div class="form-search">
+                <input type="search" placeholder="Buscar productos, marcas">
+                <button class="btn-search"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="container-slogan">
+            <i class="fa fa-hand-holding-usd"></i>
+            <p>Compra en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <div class="btn-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!--NAVBAR-->
+        <div class="navbar">
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar-user">
+                <ul>
+                    <li>
+                        <a href="/sign-up">
+                            Crea tu cuenta
+                            <i class="fa fa-id-card"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sign-in">
+                            Ingresa
+                            <i class="fa fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Mis compras
+                            <i class="fa fa-shopping-basket"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <form action="/" method="POST" class="">
-            <h1>Acceso a Mercado Liebre</h1>
+        <form action="/" method="POST" class="form-sign-up">
+            <div>
+                <h1>Acceso a Mercado Liebre</h1>
+            </div>
             <div class="">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" class="" required>
+                <input type="text" name="name" id="name" class="input-text" required>
             </div>
             <div class="">
                 <label for="surname">Apellido</label>
-                <input type="text" name="surname" id="surname" class="" required>
+                <input type="text" name="surname" id="surname" class="input-text" required>
             </div>
             <div class="user">
                 <label for="">Usuario</label>
-                <input type="text" name="user" id="user" class="" required>
+                <input type="text" name="user" id="user" class="input-text" required>
             </div>
             <div class="">
                 <label for="birthday">Nacimiento</label>
-                <input type="date" name="birthday" id="birthday" class="" required>
+                <input type="date" name="birthday" id="birthday" class="input-text" required>
             </div>
             <div class="">
                 <label for="adress">Domicilio</label>
-                <input type="text" name="adress" id="adress" class="" required>
+                <input type="text" name="adress" id="adress" class="input-text" required>
             </div>
             <!-- RADIO BUTTONS -->
             <div class="">
                 <label for="sell">Vender</label>
-                <input type="radio" name="sell" id="sell" class="" required>
+                <input type="radio" name="sell" id="sell" class="input-radio" required>
             </div>
             <div class="">
                 <label for="buy">Comprar</label>
-                <input type="radio" name="buy" id="buy" class="" required>
+                <input type="radio" name="buy" id="buy" class="input-radio" required>
             </div>
             <!-- CHECKBOX -->
             <div class="">
-                <label for="">Moda</label>
-                <input type="checkbox" name="" id="" class="" required>
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="moda" id="moda" class="input-check" required>
             </div>
             <div class="">
-                <label for="">Electro</label>
-                <input type="checkbox" name="" id="" class="" required>
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="electro" id="electro" class="input-check" required>
             </div>
             <div class="">
-                <label for="">Hogar</label>
-                <input type="checkbox" name="" id="" class="" required>
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="hogar" id="hogar" class="input-check" required>
             </div>
             <div class="">
-                <label for="">Jugueteria</label>
-                <input type="checkbox" name="" id="" class="" required>
+                <label for="toy">Jugueteria</label>
+                <input type="checkbox" name="toy" id="toy" class="input-check" required>
             </div>
             <div class="">
-                <label for="">Vida sana</label>
-                <input type="checkbox" name="" id="" class="" required>
+                <label for="life">Vida sana</label>
+                <input type="checkbox" name="life" id="life" class="input-check" required>
             </div>
             <!-- FOTO -->
             <div class="">
                 <label for="photo">Foto</label>
-                <input type="file" name="photo" id="photo" class="" required>
+                <input type="file" name="photo" id="photo" class="input-file" required>
             </div>
             <!-- PASSWORD -->
             <div class="">
                 <label for="password">Contraseña</label>
-                <input type="password" name="password" id="password" class="" required>
+                <input type="password" name="password" id="password" class="input-text" required>
             </div>
             <div class="">
                 <label for="password">Confirmar Contraseña</label>
-                <input type="password" name="password" id="password" class="" required>
+                <input type="password" name="password" id="password" class="input-text" required>
             </div>
             <!-- BUTTON -->
             <div>
-                <button type="reset">Reset</button>
-                <button type="submit">Enviar</button>
+                <button type="reset" class="btn-submit">Reset</button>
+                <button type="submit" class="btn-submit">Enviar</button>
             </div>
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="copyright">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
 </body>
 </html>

@@ -9,10 +9,65 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <!--LOGO-->
+        <div class="container-top-header">
+            <div class="container-logo">
+                <a href="/">
+                    <img src="static/img/logo-mercado-liebre.svg" alt="logo">
+                </a>
+            </div>
+            <div class="form-search">
+                <input type="search" placeholder="Buscar productos, marcas">
+                <button class="btn-search"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="container-slogan">
+            <i class="fa fa-hand-holding-usd"></i>
+            <p>Compra en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <div class="btn-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!--NAVBAR-->
+        <div class="navbar">
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar-user">
+                <ul>
+                    <li>
+                        <a href="/sign-up">
+                            Crea tu cuenta
+                            <i class="fa fa-id-card"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sign-in">
+                            Ingresa
+                            <i class="fa fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Mis compras
+                            <i class="fa fa-shopping-basket"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <form action="/" method="GET" class="form-sign-in">
-            <h1>Acceso a Mercado Liebre</h1>
+            <div>
+                <h1>Acceso a Mercado Liebre</h1>
+            </div>
             <div>
                 <label for="user">Usuario</label>
                 <input type="text" name="user" id="user" class="input-text" required>
@@ -26,6 +81,10 @@
             </div>
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="copyright">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
 </body>
 </html>
