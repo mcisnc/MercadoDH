@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.listen(process.env.PORT || 3000, ()=>{console.log(`-> http://localhost:${port} <-`)});
+app.listen(process.env.PORT || 3000, ()=>{console.log(`-> SERVER FUNCIONANDO <-`)});
 
 app.use('/static', express.static(path.join(__dirname, './public')))
 
